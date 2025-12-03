@@ -1,0 +1,153 @@
+// // ==========================
+// // CONFIGURAÇÕES INICIAIS
+// // ==========================
+// const linhas = document.querySelectorAll(".div-secao-letras");
+// const teclado = document.querySelectorAll(".letras-icone");
+// const btnEnter = document.querySelector("#enter");
+// const btnApagar = document.querySelector("#apagar");
+
+// // Lista de palavras possíveis (5 letras cada)
+// const bancoPalavras = [
+//     "CASAL", "TINTO", "PONTO", "DENTE", "FORNO", "CAMPO", 
+//     "VERDE", "PLENO", "GOSTO", "BRAVO", "BANCO", "FAROL"
+// ];
+
+// // Sorteia a palavra do dia
+// const palavraSecreta = bancoPalavras[Math.floor(Math.random() * bancoPalavras.length)];
+// console.log("Palavra do dia:", palavraSecreta);
+
+// let linhaAtual = 0;
+// let indice = 0; // índice dentro da linha atual
+
+// // ==========================
+// // ATIVA A LINHA CORRETA
+// // ==========================
+// function atualizarLinhas() {
+//     linhas.forEach((linha, i) => {
+//         const inputs = linha.querySelectorAll("input");
+
+//         inputs.forEach(inp => {
+//             inp.disabled = i !== linhaAtual;
+//             inp.classList.toggle("linha-atual-ativa", i === linhaAtual);
+//         });
+//     });
+// }
+// atualizarLinhas();
+
+// // ==========================
+// // FUNÇÃO PARA INSERIR LETRA
+// // ==========================
+// function inserirLetra(letra) {
+//     const inputs = linhas[linhaAtual].querySelectorAll("input");
+//     if (indice < 5) {
+//         inputs[indice].value = letra;
+//         indice++;
+//     }
+// }
+
+// // ==========================
+// // CLIQUE NO TECLADO VIRTUAL
+// // ==========================
+// teclado.forEach(letra => {
+//     letra.addEventListener("click", () => {
+//         if (letra.id === "enter") return;
+//         if (letra.querySelector("#apagar")) return;
+
+//         inserirLetra(letra.innerText.trim());
+//     });
+// });
+
+// // ==========================
+// // TECLADO FÍSICO
+// // ==========================
+// document.addEventListener("keydown", (e) => {
+//     if (linhaAtual >= linhas.length) return;
+
+//     const tecla = e.key.toUpperCase();
+
+//     if (/^[A-Z]$/.test(tecla)) {
+//         inserirLetra(tecla);
+//     }
+
+//     if (e.key === "Backspace") apagarLetra();
+//     if (e.key === "Enter") confirmarPalavra();
+// });
+
+// // ==========================
+// // APAGAR LETRA
+// // ==========================
+// function apagarLetra() {
+//     const inputs = linhas[linhaAtual].querySelectorAll("input");
+//     if (indice > 0) {
+//         indice--;
+//         inputs[indice].value = "";
+//     }
+// }
+// btnApagar.addEventListener("click", apagarLetra);
+
+// // ==========================
+// // ANIMAÇÃO FLIP IGUAL AO TERMO
+// // ==========================
+// function animarFlip(input, cor, delay) {
+//     setTimeout(() => {
+//         input.style.transition = "transform 0.3s ease";
+//         input.style.transform = "rotateX(90deg)";
+//     }, delay);
+
+//     setTimeout(() => {
+//         input.style.backgroundColor = cor;
+//         input.style.transform = "rotateX(0deg)";
+//     }, delay + 300);
+// }
+
+// // ==========================
+// // CONFIRMAR PALAVRA
+// // ==========================
+// function confirmarPalavra() {
+//     const inputs = linhas[linhaAtual].querySelectorAll("input");
+
+//     // Verificar se está completa
+//     let palavra = "";
+//     for (let i = 0; i < 5; i++) {
+//         if (inputs[i].value === "") {
+//             alert("Complete a palavra!");
+//             return;
+//         }
+//         palavra += inputs[i].value.toUpperCase();
+//     }
+
+//     // CORREÇÃO
+//     for (let i = 0; i < 5; i++) {
+//         const letra = inputs[i].value.toUpperCase();
+
+//         let cor = "#312a2c"; // cinza
+
+//         if (letra === palavraSecreta[i]) {
+//             cor = "#3aa394"; // verde
+//         } else if (palavraSecreta.includes(letra)) {
+//             cor = "#d3ad69"; // amarelo
+//         }
+
+//         animarFlip(inputs[i], cor, i * 200);
+//         inputs[i].disabled = true;
+//     }
+
+//     // ACERTOU
+//     if (palavra === palavraSecreta) {
+//         setTimeout(() => alert("Parabéns, você acertou!"), 1200);
+//         return;
+//     }
+
+//     // PRÓXIMA LINHA
+//     linhaAtual++;
+//     indice = 0;
+
+//     if (linhaAtual >= linhas.length) {
+//         setTimeout(() => alert("Fim do jogo! A palavra era: " + palavraSecreta), 1200);
+//         return;
+//     }
+
+//     atualizarLinhas();
+// }
+
+// btnEnter.addEventListener("click", confirmarPalavra);

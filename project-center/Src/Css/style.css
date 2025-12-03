@@ -50,7 +50,7 @@ nav {
     border-bottom: 3px solid #b74b4b;
 }
 
-/* Redes sociaisa*/
+/* Redes sociais*/
 #social-media {
     display: flex;
     gap: 10px;
@@ -69,11 +69,12 @@ nav {
 main span {
     color: #b74b4b;
 }
+/* Seção 1 - Home */
 section#home{
-    min-height: 100vh;
-    padding: 60px 6% 50px;
+    min-height: 80vh;
+    padding: 60px 6% 5px;
 }
-
+/* Configuração de títulos e parágrafos */
 .home-content h1, .home-content span{
     font-size: 45px;
     font-weight: 700;
@@ -88,7 +89,7 @@ section#home{
 .home-content p{
     font-size: 20px;
 }
-
+/* Icones das Redes sociais */
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -110,6 +111,7 @@ section#home{
     background-color: #b74b4b;
     box-shadow: 0  0 25px #b74b4b;
 }
+/* Botão de Contato */
 .btn{
     display: inline-block;
     padding: 10px 35px;
@@ -130,24 +132,25 @@ section#home{
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
+/* Estilo do H3 */
 .typing-text{
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
-
+/* Estilo do texto escrevendo */
 .typing-text span{
     position: relative;
     font-size: 50px;
    
 }
-
+/* Animação escrevendo */
 .typing-text span::before{
     content: "Software Developer";
     color: #b74b4b;
     animation: words 20s infinite, inicial;
 }
-
+/* Animação do cursor piscando */
 .typing-text span::after{
     content: "";
     position: absolute;
@@ -179,6 +182,24 @@ section#home{
         content: "Systems Analyst";
     }
 }
+/* Seção 2 - About */
+section div#about-content {
+    display: flex;
+    justify-content: space-around;
+}
+section#about h1 {
+    margin: 0px 0px 20px 80px;
+}
+section div#about-content #about-img {
+    background-color: #b74b4b;
+    width: 300px;
+    height: 250px;
+}
+section div#about-content #about-text {
+    width: 600px;
+    height: 200px;
+    background-color: #b74b4b;
+}
 
 /* Estilos para o footer fixo na base */
 footer {
@@ -195,7 +216,7 @@ footer {
     height: 40px; /* Define uma altura fixa para o footer */
     text-align: center;
 }
-
+/* Links de Navegação */
 footer a {
     margin-left: 15px;
     padding: 10px 20px;
@@ -212,20 +233,4 @@ footer a:hover {
 span.oculto{
     display: none;
 }
-/*Página 02 */
 
-main #projects-home {
-    margin-bottom: 50px;
-}
-main #projects-home h1 {
-    margin: 50px 0px 0px 30px;
-}
-main #projects-home h2 {
-    margin: 20px 0px 0px 30px;
-}
-main #projects-home li, #projects-home p {
-    margin: 20px 0px 0px 80px;
-}
-main #projects-home a { 
-    border-bottom: 1px solid blue;
-}
