@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding-top: 95px; /* Espaço suficiente para o header fixo */
     padding-bottom: 50px; /* Espaço suficiente para o footer fixo */
     background-color: #111111;  
+    font-family: 'Inter', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
 }
 /* Estilos para o nav fixo no topo */
 nav {
@@ -166,28 +173,31 @@ section#home{
 }
 
 @keyframes words{
-    0%, 20%{
+    0%, 30%{
         content: "Web Developer";
     }
-    21%, 40%{
-        content: "Developer";
+    31%, 50%{
+        content: "Mobile Developer";
     }
-    41%, 60%{
+    51%, 70%{
         content: "Graphic Design";
     }
-    61%, 80%{
+    71%, 100%{
         content: "IT Technician";
     }
     81%, 100%{
-        content: "Systems Analyst";
+        content: "Full Stack";
     }
 }
 /* Seção 2 - About */
+.scrollSuave {
+    scroll-margin-top: 100px; /* altura do seu header */
+}
 section div#about-content {
     display: flex;
-    background-color: blue;
-  
+    height: 380px;
 }
+
 section#about h1{
     margin: 100px 0px 20px 80px;
 }
@@ -200,22 +210,76 @@ section div#about-content #about-img {
 }
 section div#about-content #about-text {
     width: 750px;
-    margin-top: 120px;
+    margin-top: 30px;
 }
 
+/* Seção 3 - Skills */
 section#skills {
     background-color: aqua;
-    height: 300px;
+    height: 380px;
     width: 100%;
 }
+section#skills h1 {
+    text-align: center;
+}
+
+div#ContainerSkills {
+    margin: auto;
+    width: 65%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+div#subContainer {
+    width: 60%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+div.divSkills {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+div.divSkills i {
+    font-size: 80px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.barra {
+    width: 90px;
+    height: 5px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    position: absolute; 
+    bottom: 5px;        
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progresso {
+    width: 80%; 
+    height: 100%;
+    background-color: green;
+}
+/* Seção 4 - Projects */
 section#projects {
     background-color: chocolate;
-    height: 300px;
+    height: 380px;
     width: 100%;
 }
 section#contact {
     background-color: cornflowerblue;
-    height: 300px;
+    height: 380px;
     width: 100%;
 }
 
