@@ -185,20 +185,38 @@ section#home{
 /* Seção 2 - About */
 section div#about-content {
     display: flex;
-    justify-content: space-around;
+    background-color: blue;
+  
 }
-section#about h1 {
+section#about h1{
+    margin: 100px 0px 20px 80px;
+}
+section h1.titulo-section {
     margin: 0px 0px 20px 80px;
 }
 section div#about-content #about-img {
-    background-color: #b74b4b;
     width: 300px;
-    height: 250px;
+    height: 300px;
 }
 section div#about-content #about-text {
-    width: 600px;
-    height: 200px;
-    background-color: #b74b4b;
+    width: 750px;
+    margin-top: 120px;
+}
+
+section#skills {
+    background-color: aqua;
+    height: 300px;
+    width: 100%;
+}
+section#projects {
+    background-color: chocolate;
+    height: 300px;
+    width: 100%;
+}
+section#contact {
+    background-color: cornflowerblue;
+    height: 300px;
+    width: 100%;
 }
 
 /* Estilos para o footer fixo na base */
