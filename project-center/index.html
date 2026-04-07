@@ -1,171 +1,522 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="qLvuISomR0bXYIP7APiZOtfFq6NTC7s660gwoEH2g3I" />
-    <title>Gabriel Costa - Tech Specialist</title>
-    <link rel="stylesheet" href="Src/Css/style.css">
-    <link rel="stylesheet" href="Src/Css/reset.css">
-    <link rel="stylesheet" href="Src/Css/responsivo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="shortcut icon" href="Src/Img/Gabriel costa Tech Specialist icone G.png" type="image/x-icon">
-    <script src="Src/Js/index.js" defer></script>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="qLvuISomR0bXYIP7APiZOtfFq6NTC7s660gwoEH2g3I" />
+  <title>Gabriel Costa - Tech Specialist</title>
+  <link rel="stylesheet" href="Src/Css/reset.css" />
+  <link rel="stylesheet" href="Src/Css/style.css" />
+  <link rel="stylesheet" href="Src/Css/responsivo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="shortcut icon" href="Src/Img/Gabriel costa Tech Specialist icone G.png" type="image/x-icon" />
+  <script type="module" src="Src/scripts/main.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="logo">
-                <a href="https://github.com/gabrielcosta-js" target="_blank"><img
-                        src="Src/Img/Gabriel costa Tech Specialist Logo transparante.png" alt=""></a>
-            </div>
-            <div id="botoes-navegacao">
-                <a href="index.html" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div id="social-media">
-                <a href="https://github.com/gabrielcosta-js" target="_blank"><img src="Src/Img/githubsocialmedia.png"
-                        alt="Git-hub"></a>
-                <a href="https://www.linkedin.com/in/gabriel-costajs" target="_blank"><img
-                        src="Src/Img/linkedlnsocialmedia.png" alt="Linkdln"></a>
-                <a href="https://instagram.com/gabrielcosta_js" target="_blank"><img
-                        src="Src/Img/instagramsocialmedia.png" alt="Instagram"></a>
-                <a href="https://discord.gg/XhUzXE6C" target="_blank"><img src="Src/Img/discordsocialmedia.png"
-                        alt="Discord"></a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <div class="home-content">
-                <span>Portfólio</span>
-                <h1>Seja Bem vindo! (a)</h1>
-                <h3 class="typing-text">Minhas formações: <span class="typed-text"></span></h3>
-                <p>É um prazer ter você aqui. Neste site, você encontrará uma coleção dos meus projetos, que refletem
-                    minha paixão e habilidades em tecnologia. Navegue à vontade e explore o que tenho a oferecer. Fique
-                    à vontade para entrar em contato se quiser discutir qualquer um dos meus trabalhos ou se tiver
-                    alguma pergunta.</p>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/gabrielcosta-js" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/gabriel-costajs" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://instagram.com/gabrielcosta_js"><i class="fa-brands fa-instagram"
-                        target="_blank"></i></a>
-                <a href="https://discord.gg/XhUzXE6C" target="_blank"><i class="fa-brands fa-discord"></i></a>
-            </div>
-            <a href="#contact" class="btn">Contato</a>
-            <span class="aviso"></span>
-            <span class="oculto">🛠️ Apesar de algumas páginas ainda não estarem disponíveis para dispositivos móveis,
-                ainda é possível acessar a página dos meus projetos clicando <a href="projects.html">aqui!</a></span>
-        </section>
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="https://github.com/gabrielcosta-js" target="_blank"><img
+            src="Src/Img/Gabriel costa Tech Specialist Logo transparante.png" alt="" /></a>
+      </div>
+      <div id="botoes-navegacao">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#tools">Tools</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+      </div>
+      <div id="social-media">
+        <a href="https://github.com/gabrielcosta-js" target="_blank"><img src="Src/Img/githubsocialmedia.png"
+            alt="Git-hub" /></a>
+        <a href="https://www.linkedin.com/in/gabriel-costajs" target="_blank"><img src="Src/Img/linkedlnsocialmedia.png"
+            alt="Linkdln" /></a>
+        <a href="https://instagram.com/gabrielcosta_js" target="_blank"><img src="Src/Img/instagramsocialmedia.png"
+            alt="Instagram" /></a>
+        <a href="https://discord.gg/XhUzXE6C" target="_blank"><img src="Src/Img/discordsocialmedia.png"
+            alt="Discord" /></a>
+      </div>
+    </nav>
+  </header>
+  <main class="parallax">
+    <section id="home" class="scrollSuave">
+      <div class="home-content">
+        <span>Portfólio</span>
+        <h1>Seja Bem vindo! (a)</h1>
+        <h3 class="typing-text">
+          Minhas formações: <span class="typed-text"></span>
+        </h3>
+        <p>
+          É um prazer ter você aqui. Neste site, você encontrará uma coleção
+          dos meus projetos, que refletem minha paixão e habilidades em
+          tecnologia. Navegue à vontade e explore o que tenho a oferecer.
+          Fique à vontade para entrar em contato se quiser discutir qualquer
+          um dos meus trabalhos ou se tiver alguma pergunta.
+        </p>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/gabrielcosta-js" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gabriel-costajs" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com/gabrielcosta_js"><i class="fa-brands fa-instagram" target="_blank"></i></a>
+        <a href="https://discord.gg/XhUzXE6C" target="_blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
+      <a href="#contact" class="btn">Contato</a>
+      <span class="aviso"></span>
+      <span class="oculto">🛠️ Apesar de algumas páginas ainda não estarem disponíveis para
+        dispositivos móveis, ainda é possível acessar a página dos meus
+        projetos clicando <a href="projects.html">aqui!</a></span>
+    </section>
 
-        <section id="about" class="scrollSuave">
-            <h1 class="titulo-section">About me</h1>
-            <div id="about-content">
-                <div id=""><img src="Src/Img/foto-perfil.png" alt="" id="about-img"></div>
-                <div id="about-text">
-                    <p>Sou Técnico em Informática e Técnico em Desenvolvimento de Sistemas pelo SENAI, atualmente
-                        graduando em Sistemas de Informação no Instituto Federal da Bahia (IFBA).
-
-                        Tenho conhecimentos em Desenvolvimento Web, Banco de Dados, IoT, Desenvolvimento Mobile e Full
-                        Stack. Já desenvolvi aplicações completas, incluindo um aplicativo para gerenciamento de
-                        despesas, utilizando banco de dados, front-end e back-end — aplicando na prática conceitos de
-                        desenvolvimento Full Stack.
-
-                        Possuo experiência em projetos reais, como o desenvolvimento de um chatbot para uma empresa,
-                        onde atuei desde a concepção até a implementação da solução.
-
-                        Estou em busca de uma oportunidade de estágio na área de desenvolvimento, onde eu possa aplicar
-                        meus conhecimentos, evoluir tecnicamente e contribuir com soluções eficientes e inovadoras.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="scrollSuave">
-            <h1>Skills</h1>
-
-            <div id="ContainerSkills">
-                <div id="subContainer">
-                     <div class="divSkills">
-                    <i class="fa-brands fa-html5"></i>
-                    <div class="barra">
-                        <div class="progresso"></div>
-                    </div>
-                </div>
-
-                <div class="divSkills">
-                    <i class="fa-brands fa-html5"></i>
-                    <div class="barra">
-                        <div class="progresso"></div>
-                    </div>
-                </div>
-
-
-                <div class="divSkills">
-                    <i class="fa-brands fa-html5"></i>
-                    <div class="barra">
-                        <div class="progresso"></div>
-                    </div>
-                </div>
-
-
-                <div class="divSkills">
-                    <i class="fa-brands fa-html5"></i>
-                    <div class="barra">
-                        <div class="progresso"></div>
-                    </div>
-                </div>
-
-                <div class="divSkills">
-                    <i class="fa-brands fa-html5"></i>
-                    <div class="barra">
-                        <div class="progresso"></div>
-                    </div>
-                </div>
-
-                <div class="divSkills">
-                    <i class="fa-brands fa-html5"></i>
-                    <div class="barra">
-                        <div class="progresso"></div>
-                    </div>
-                </div>
-
-
-
-                </div>
-            </div>
-
-            
-
-
-        </section>
-
-        <section id="projects" class="scrollSuave">
-            <h1 class="titulo-section">Projects</h1>
-        </section>
-
-        <section id="contact" class="scrollSuave">
-            <h1 class="titulo-section">Contact</h1>
-        </section>
-    </main>
-
-    <footer>
-        <div id="footer-navegacao">
-            <a href="mailto:gabrielcosta.js05">e-mail</a>
-            <a href="https://github.com/gabrielcosta-js" target="_blank">github</a>
-            <a href="https://discord.gg/XhUzXE6C" target="_blank">discord</a>
-            <a href="https://www.linkedin.com/in/gabriel-costajs" target="_blank">linkedIn</a>
-            <a href="https://instagram.com/gabrielcosta_js" target="_blank">instagram</a>
+    <section id="about" class="scrollSuave parallax">
+      <h1 class="SectionText">About me</h1>
+      <div id="about-content">
+        <div id="">
+          <img src="Src/Img/foto-perfil.png" alt="" id="about-img" />
         </div>
-    </footer>
+        <div id="about-text">
+          <p>
+            Sou Técnico em Informática e Técnico em Desenvolvimento de
+            Sistemas pelo SENAI, atualmente graduando em Sistemas de
+            Informação no Instituto Federal da Bahia (IFBA). Tenho
+            conhecimentos em Desenvolvimento Web, Banco de Dados, IoT,
+            Desenvolvimento Mobile e Full Stack. Já desenvolvi aplicações
+            completas, incluindo um aplicativo para gerenciamento de despesas,
+            utilizando banco de dados, front-end e back-end — aplicando na
+            prática conceitos de desenvolvimento Full Stack. Possuo
+            experiência em projetos reais, como o desenvolvimento de um
+            chatbot para uma empresa, onde atuei desde a concepção até a
+            implementação da solução. Estou em busca de uma oportunidade de
+            estágio na área de desenvolvimento, onde eu possa aplicar meus
+            conhecimentos, evoluir tecnicamente e contribuir com soluções
+            eficientes e inovadoras.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="scrollSuave parallax">
+      <h1 class="SectionText">Tools</h1>
+
+      <div id="ContainerTools">
+        <h2 class="SectionText">Tecnologias</h2>
+        <p class="SectionText">Ferramentas que possuo Afinidade</p>
+        <div id="subContainer">
+          <div class="divTools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            <p>Html 5</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            <p>Css 5</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            <p>JavaScript</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+
+            <p>Java</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+
+            <p>Python</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+
+            <p>Mysql</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+
+            <p>C</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+
+            <p>C++</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+
+            <p>Android</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" />
+
+
+            <p>Arduino</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+
+          <div class="divTools">
+
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg" />
+
+
+            <p>FireBase</p>
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+          <div class="divTools">
+
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" />
+
+            <p>SupaBase</p>
+
+            <div class="barra">
+              <div class="progresso"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="scrollSuave parallax">
+      <h1 class="SectionText">Projects</h1>
+      <div id="projectContainer">
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+        <div class="projectSubContainer">
+          <img src="Src/Img/notebook-fundo.png" alt="Projeto Tal">
+          <h2>Título do projeto</h2>
+          <p>Esse projeto é de uma interface, que usa API, e Banco de dados, que faz assim e assado.</p>
+
+          <div class="projectFerramentas">
+            <ul>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>API</li>
+              <li>Banco de Dados</li>
+            </ul>
+          </div>
+
+          <a href="#paginaEmConstrucao">Ver Projeto</a>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section id="skills" class="scrollSuave parallax">
+      <h1 class="SectionText">Skills</h1>
+
+      <div id="skillsContainer">
+        <div class="skillSubContainer">
+
+          <div>
+            <img src="Src/Img/brain.png" alt="">
+          </div>
+
+          <div>
+            <h2>Soft skills e Hard skills</h2>
+            <ul class="skillLista">
+              <li>Organização.</li>
+              <li>Boa comunicação.</li>
+              <li>Facilidade em trabalhar em equipe.</li>
+              <li>Proatividade nas tarefas.</li>
+              <li>Aprendizado rápido.</li>
+              <li>Atenção aos detalhes.</li>
+              <li>Responsabilidade com prazos.</li>
+              <li>Capacidade de adaptação.</li>
+              <li>Raciocínio lógico.</li>
+              <li>Comprometimento com qualidade.</li>
+              <li>Interesse constante em aprender novas tecnologias.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="skillSubContainer">
+
+          <div>
+            <img src="Src/Img/lamp.png" alt="">
+          </div>
+
+          <div>
+            <h2>Hard skills tecnologia</h2>
+            <ul class="skillLista">
+              <li>Montagem e manutenção de computadores.</li>
+              <li>Formatação e instalação de sistemas operacionais.</li>
+              <li>Instalação e configuração de roteadores.</li>
+              <li>Noções de redes domésticas.</li>
+              <li>Conhecimento em JavaScript, API, Banco de dados.</li>
+              <li>Manipulação de HTML e CSS.</li>
+              <li>Criação de interfaces simples e funcionais.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="skillSubContainer">
+
+          <div>
+            <img src="Src/Img/tecnologia.png" alt="">
+          </div>
+
+          <div>
+            <h2>Hard skills design gráfico</h2>
+            <ul class="skillLista">
+              <li>Manipulação de imagens.</li>
+              <li>Criação de artes digitais.</li>
+              <li>Noções de tipografia e cores.</li>
+              <li>Adaptação de artes para redes sociais.</li>
+              <li>Organização visual de elementos.</li>
+              <li>Conhecimento básico em ferramentas gráficas, Corel Drawl, Adobe Photoshop, Canvas</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div id="certificadoContainer" class="skillSubContainer">
+          <h2>Certificações</h2>
+          <div id="certificacoes">
+            <img src="Src/Img/certificado_pacoteOffice.png" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div id="baixarCurriculo">
+      <a href="Src/Img/certificado_pacoteOffice.png" download>
+        <i class="fa-solid fa-download"></i>
+        <span>Currículo</span>
+      </a>
+    </div>
+
+    <div id="mudarTema">
+      <div id="sunTema"><i class="fa-solid fa-sun"></i></div>
+      <div id="moonTema"><i class="fa-solid fa-moon"></i></div>
+    </div>
+
+
+    <span id="direitoReservado">
+      <p>Direitos Reservados © Gabriel Costa 2026</p>
+    </span>
+  </main>
+
+  <footer>
+    <div id="footer-container">
+
+      <p id="direitos">© 2026 Gabriel Costa • Todos os direitos reservados</p>
+
+      <div id="footer-navegacao">
+        <a href="mailto:gabrielcosta.js05">e-mail</a>
+        <a href="https://github.com/gabrielcosta-js" target="_blank">github</a>
+        <a href="https://discord.gg/XhUzXE6C" target="_blank">discord</a>
+        <a href="https://www.linkedin.com/in/gabriel-costajs" target="_blank">linkedin</a>
+        <a href="https://instagram.com/gabrielcosta_js" target="_blank">instagram</a>
+
+      </div>
+
+    </div>
+  </footer>
 </body>
 
 </html>
