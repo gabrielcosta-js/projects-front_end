@@ -41,6 +41,30 @@ export function tema() {
         });
     });
 }
+export function scrollAtivo() {
+  const sections = document.querySelectorAll("section");
+  const menuItems = document.querySelectorAll("#botoes-navegacao a");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute("id");
+
+        menuItems.forEach(link => {
+          link.classList.remove("active");
+
+          if (link.getAttribute("href") === `#${id}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  }, {
+    threshold: 0.6 // porcentagem visível da section
+  });
+
+  sections.forEach(section => observer.observe(section));
+}
 
 export function coresProjetosFerramentas() {
     const listas = document.querySelectorAll('.projectFerramentas li');
