@@ -77,7 +77,7 @@ h3 {
 /* Temas */
 #mudarTema {
   position: fixed;
-  bottom: 10%;
+  bottom: 14%;
   right: 1%;
 
   width: 60px;
@@ -114,6 +114,47 @@ h3 {
   display: none;
 }
 
+/* ===================== */
+/* 📄 BOTÃO CURRÍCULO */
+/* ===================== */
+
+#baixarCurriculo {
+  position: fixed;
+  bottom: 14%;
+  left: 1%;
+
+  animation: subirDescer 3s infinite ease-in-out;
+}
+
+#baixarCurriculo a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 16px;
+
+  background: linear-gradient(135deg, #222, #444);
+  color: white;
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+#baixarCurriculo a:hover {
+  transform: scale(1.08);
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+#baixarCurriculo i {
+  font-size: 16px;
+}
 /* ===================== */
 /* 🌞 LIGHT MODE */
 /* ===================== */
@@ -254,11 +295,39 @@ body.light #mudarTema {
 body.light #mudarTema i {
   filter: brightness(0);
 }
+/* ===================== */
+/* BOTÃO CURRÍCULO - LIGHT */
+/* ===================== */
+
+body.light #baixarCurriculo a{
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+
+  color: #111;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+body.light #baixarCurriculo a:hover{
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+body.light #baixarCurriculo i{
+  color: #111;
+}
 
 
 /* ===================== */
 /* Tools */
 /* ===================== */
+#tools {
+    background-image: url('../Img/fundo.png');
+    height: auto;
+}
 body.light #ContainerTools {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -287,6 +356,59 @@ body.light #about-text {
   color: #222;
 }
 
+/* ===================== */
+/* SKILLS */
+/* ===================== */
+
+body.light #skills {
+  background-image: url('../Img/fundo.png');
+}
+
+/* título da seção */
+body.light #skills .SectionText{
+  color: #222;
+}
+
+/* container principal */
+body.light #skillsContainer{
+  color: #222;
+}
+
+/* cards */
+body.light .skillSubContainer{
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+  border-radius: 18px;
+}
+
+/* títulos dos cards */
+body.light .skillSubContainer h2{
+  color: #111;
+}
+
+/* lista */
+body.light .skillLista{
+  color: #333;
+}
+
+/* itens da lista */
+body.light .skillLista li{
+  color: #333;
+}
+
+/* imagens (caso fiquem muito claras) */
+body.light .skillSubContainer img{
+  filter: none;
+}
+
+/* certificações */
+body.light #certificadoContainer{
+  background: rgba(255,255,255,0.85);
+}
 /* ===================== */
 /* FOOTER */
 /* ===================== */
@@ -597,7 +719,7 @@ section#Tools {
 
 #ContainerTools {
   margin: 50px auto;
-  width: 55%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -749,6 +871,7 @@ section#Tools {
 
 #skills {
   height: auto;
+  background-image: url('../Img/notebook2.png');
 }
 #skills h1 {
   margin-bottom: 50px;
@@ -761,7 +884,7 @@ section#Tools {
 }
 .skillSubContainer {
   width: 50%;
-  padding: 30px;
+  padding: 15px;
 
   background-color: rgba(240, 248, 255, 0.322);
   border-radius: 15px;
@@ -769,7 +892,7 @@ section#Tools {
   box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.288);
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 15px;
   margin-bottom: 50px;
   transition: transform 0.5s ease;
 }
@@ -781,34 +904,84 @@ section#Tools {
   width: 300px;
   height: 300px;
 }
+.skillSubContainer h2 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    margin-bottom: 15px;
+}
+.skillLista li {
+    list-style: none;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    margin-bottom: 10px;
+}
+.skillSubContainer {
+    font-family: 'Libre Baskerville', Georgia, serif;
+}
+
+#certificadoContainer {
+    display: block;
+    width: 80%;
+}
+#certificadoContainer h2 {
+    text-align: center;
+}
+#certificacoes {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    
+}
+#certificacoes img {
+    width: 450px;
+    height: 400px;
+}
 
 /* ===================== */
 /* 🔻 FOOTER */
 /* ===================== */
+
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 12px 0;
+
+  background-color: #000000f6;
+  backdrop-filter: blur(6px);
+
   display: flex;
   justify-content: center;
+}
+
+#footer-container{
+  display: flex;
+  flex-direction: column; /* coloca um em cima do outro */
   align-items: center;
-  height: 40px;
-  background-color: #000000f6;
+  gap: 6px;
+}
+
+#direitos{
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+}
+
+#footer-navegacao{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 footer a {
-  margin-left: 15px;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
   color: white;
+  font-size: 14px;
 }
 
 footer a:hover {
-  font-size: 17px;
-  background-color: rgba(255, 255, 255, 0.062);
+  background-color: rgba(255, 255, 255, 0.06);
   color: #b74b4b;
-  transition: 0.6s ease;
+  transition: 0.3s ease;
 }
 
 /* ===================== */
