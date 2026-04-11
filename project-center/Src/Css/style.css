@@ -3,7 +3,7 @@
 /* ===================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
-@import url('https://googleapis.com');
+@import url("https://googleapis.com");
 
 /* ===================== */
 /* 🌍 BASE / GLOBAL */
@@ -11,19 +11,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  padding-top: 95px;
-  /* Espaço suficiente para o header fixo */
-  padding-bottom: 50px;
-  /* Espaço suficiente para o footer fixo */
-  background: linear-gradient(to bottom,
-      #000000,
-      #000000f8,
-      #000000);
-  font-family: "Inter", sans-serif;
-}
-
 
 main span {
   color: #b74b4b;
@@ -77,7 +64,7 @@ h3 {
 /* Temas */
 #mudarTema {
   position: fixed;
-  bottom: 14%;
+  bottom: 10%;
   right: 1%;
 
   width: 60px;
@@ -120,7 +107,7 @@ h3 {
 
 #baixarCurriculo {
   position: fixed;
-  bottom: 14%;
+  bottom: 10%;
   left: 1%;
 
   animation: subirDescer 3s infinite ease-in-out;
@@ -161,23 +148,13 @@ h3 {
 /* 🌞 LIGHT MODE */
 /* ===================== */
 
-body.light {
-  background: linear-gradient(to bottom,
-      #f5f7fa,
-      #e4e7eb,
-      #f5f7fa);
-}
-
 /* ===================== */
 /* NAVBAR */
 /* ===================== */
 body.light nav {
-  background: linear-gradient(135deg,
-      #3a0d0d,
-      #7a1c1c,
-      #c94c4c);
-  border: solid rgba(0, 0, 0, 0.829);
-  border-width: 2px;
+  background: linear-gradient(135deg, #3a0d0d, #7a1c1c, #c94c4c);
+  border: solid rgba(0, 0, 0, 0.253);
+  border-width: 1px;
 }
 
 /* ===================== */
@@ -185,12 +162,12 @@ body.light nav {
 /* ===================== */
 body.light section {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.829);
+  outline: 1px solid rgba(0, 0, 0, 0.562);
 }
 
 body.light section#home {
   position: relative;
-  background-color: #FADBD8;
+  background-color: #f8f7f72d;
 }
 
 body.light section#home::before {
@@ -230,7 +207,6 @@ body.light .typing-text span::before {
   color: white;
 }
 
-
 body.light #about-text p {
   color: #000000;
 }
@@ -243,48 +219,36 @@ body.light .SectionText {
 /* BOTÃO (CTA) */
 /* ===================== */
 
-/* NAV */
-body.light #social-media a {
-  display: flex;
-  /* ou inline-flex */
-  align-items: center;
-  justify-content: center;
-
-  width: 50px;
-  height: 50px;
-
-  background: rgb(255, 255, 255);
-  backdrop-filter: blur(10px);
-
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-/* NAV */
-body.light #social-media img {
-  filter: brightness(0);
-}
 
 /* HOME */
 body.light .social-icons a {
-  background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 3px solid #000000;
+}
+body.light .social-icons a:hover {
+  color: white;
+  border: 3px solid #ffffff3f;
+  box-shadow: 2px 1px 5px black;
+  color: black;
+  background: transparent;
 }
 
 body.light .social-icons i {
   filter: brightness(0);
 }
 
-
 body.light .btn {
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.062);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid #000000;
   color: black;
 }
-
-
+body.light .btn:hover {
+  color: white;
+  border: 2px solid #ffffff3f;
+  box-shadow: 2px 1px 5px black;
+  color: black;
+}
 
 /* Tema */
 body.light #mudarTema {
@@ -323,43 +287,37 @@ body.light #baixarCurriculo i {
 }
 
 /* Modal light */
-body.light #fecharModal{
-
+body.light #fecharModal {
   color: #111;
 
   background: linear-gradient(135deg, #ffffff, #eaeaea);
 
   box-shadow:
-    0 6px 18px rgba(0,0,0,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.8);
-
+    0 6px 18px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 /* hover light */
-body.light #fecharModal:hover{
-
+body.light #fecharModal:hover {
   box-shadow:
-    0 10px 22px rgba(0,0,0,0.25),
-    inset 0 1px 0 rgba(255,255,255,0.9);
+    0 10px 22px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 
   background: linear-gradient(135deg, #ffffff, #dddddd);
-
 }
 
 /* clique light */
-body.light #fecharModal:active{
-
+body.light #fecharModal:active {
   box-shadow:
-    0 3px 8px rgba(0,0,0,0.2),
-    inset 0 2px 4px rgba(0,0,0,0.15);
-
+    0 3px 8px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ===================== */
 /* Tools */
 /* ===================== */
 #tools {
-  background-image: url('../Img/fundo.png');
+  background-image: url("../Img/fundo.png");
   height: auto;
 }
 
@@ -375,14 +333,6 @@ body.light .divTools {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Barra */
-body.light .barra {
-  border: 2px solid #999;
-}
-
-body.light .progresso {
-  background-color: #4caf50;
-}
 
 /* ===================== */
 /* ABOUT */
@@ -396,7 +346,7 @@ body.light #about-text {
 /* ===================== */
 
 body.light #skills {
-  background-image: url('../Img/fundo.png');
+  background-image: url("../Img/fundo.png");
 }
 
 /* título da seção */
@@ -449,17 +399,10 @@ body.light #certificadoContainer {
 /* FOOTER */
 /* ===================== */
 body.light footer {
-  background: linear-gradient(135deg,
-      #3a0d0d,
-      #7a1c1c,
-      #c94c4c);
-
-  border: solid rgba(0, 0, 0, 0.829);
-  border-width: 2px;
+  background: linear-gradient(135deg, #3a0d0d, #7a1c1c, #c94c4c);
+  border: solid rgba(0, 0, 0, 0.253);
+  border-width: 1px;
 }
-
-
-
 
 /* ===================== */
 /* 🧭 HEADER / NAV */
@@ -469,13 +412,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  height: 85px;
+  height: auto;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #000000f6;
+  background-color: #000000f1;
+   backdrop-filter: blur(6px);
 }
 
 /* Logo */
@@ -484,7 +428,7 @@ nav {
 }
 
 #logo img {
-  height: 75px;
+  height: 50px;
   transition: 0.6s ease;
 }
 
@@ -494,17 +438,12 @@ nav {
 }
 
 /* Navegação */
-#botoes-navegacao {
-  display: flex;
-  gap: 30px;
-}
-
 #botoes-navegacao a {
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 20px;
   font-weight: 500;
   transition: 0.6s ease;
-  border-bottom: 3px solid transparent;
+
   color: white;
 }
 
@@ -518,25 +457,28 @@ nav {
 #social-media {
   display: flex;
   gap: 10px;
-  margin-right: 50px;
+
 }
 
 #social-media a {
-  display: flex;
+  display: inline-flex;       /* Pra manter os elementos na mesma linha e no meio do a */
   align-items: center;
   justify-content: center;
-
-  width: 50px;
-  height: 50px;
-
-  border-radius: 50%;
-  transition: 0.3s ease;
+  font-size: 24px;
+  color: white;
+  margin: 0 10px;
+  transition: 0.3s;
+  border-radius: 50%; 
+  width: 30px;
+  height: 30px;
+}
+#social-media a:nth-child(4) {
+  margin-right: 50px;
 }
 
 /* hover no botão inteiro */
 #social-media a:hover {
   transform: scale(1.2) translateY(-3px);
-  box-shadow: 0 0 25px #b74b4b;
 }
 
 #social-media img {
@@ -545,8 +487,6 @@ nav {
   border-radius: 50%;
   transition: 0.3s ease;
 }
-
-
 
 /* ===================== */
 /* 🏠 HOME */
@@ -559,9 +499,9 @@ section {
 
 section#home {
   height: auto;
-  padding: 60px 6% 5px;
   background-color: #000000;
-  padding: 50px;
+  padding: 60px;
+  margin-top: 50px;
 }
 
 .home-content h1,
@@ -662,7 +602,6 @@ section#home {
 }
 
 @keyframes words {
-
   0%,
   30% {
     content: "Web Developer";
@@ -713,7 +652,7 @@ section#home {
 /* 👤 ABOUT */
 /* ===================== */
 #about {
-  background-image: url('../Img/notebook-fundo.png');
+  background-image: url("../Img/notebook-fundo.png");
 }
 
 #about-content {
@@ -775,7 +714,7 @@ section#Tools {
   position: relative;
   background-color: white;
   border-radius: 15px;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
 
   filter: grayscale(100%);
   opacity: 0.7;
@@ -795,23 +734,21 @@ section#Tools {
 /* Ícone */
 .divTools img {
   width: 100px;
-
-
 }
 
 /* Texto */
 .divTools p {
   color: black;
   font-size: 23px;
-  font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-variant-numeric: lining-nums;
   padding: 10px;
 }
 
 /* Barra */
 .barra {
-  width: 95%;
-  height: 5px;
+  width: 94%;
+  height: 10px;
   border: 2px solid #ccc;
   position: absolute;
   bottom: 5%;
@@ -822,13 +759,25 @@ section#Tools {
   height: 100%;
   background-color: green;
 }
+.divTools:hover #htmlProgresso { width: 100%; }
+.divTools:hover #cssProgresso { width: 100%; }
+.divTools:hover #jsProgresso { width: 60%; }
+.divTools:hover #javaProgresso { width: 65%; }
+.divTools:hover #pythonProgresso { width: 40%; }
+.divTools:hover #mysqlProgresso { width: 70%; }
+.divTools:hover #cProgresso { width: 40%; }
+.divTools:hover #cppProgresso { width: 40%; }
+.divTools:hover #androidProgresso { width: 60%; }
+.divTools:hover #arduinoProgresso { width: 70%; }
+.divTools:hover #firebaseProgresso { width: 50%; }
+.divTools:hover #supabaseProgresso { width: 50%; }
 
 /* ===================== */
 /* 📁 PROJECTS / CONTACT */
 /* ===================== */
 #projects {
   height: auto;
-  background-image: url('../Img/programacao.jpg');
+  background-image: url("../Img/programacao.jpg");
 }
 
 #projectContainer {
@@ -900,7 +849,7 @@ section#Tools {
 
 #skills {
   height: auto;
-  background-image: url('../Img/notebook2.png');
+  background-image: url("../Img/notebook2.png");
 }
 
 #skills h1 {
@@ -939,18 +888,18 @@ section#Tools {
 }
 
 .skillSubContainer h2 {
-  font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   margin-bottom: 15px;
 }
 
 .skillLista li {
   list-style: none;
-  font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   margin-bottom: 10px;
 }
 
 .skillSubContainer {
-  font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
 }
 
 #certificadoContainer {
@@ -966,7 +915,6 @@ section#Tools {
   display: flex;
   gap: 15px;
   flex-direction: row;
-
 }
 
 #certificacoes img {
@@ -1044,7 +992,6 @@ section#Tools {
   box-shadow:
     0 10px 22px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(0, 0, 0, 0.6);
-
 }
 
 /* clique */
@@ -1086,34 +1033,31 @@ footer {
 #footer-container {
   display: flex;
   flex-direction: column;
-  /* coloca um em cima do outro */
   align-items: center;
-  gap: 6px;
 }
 
 #direitos {
-  font-size: 13px;
+  font-size: 10px;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 5px;
 }
 
 #footer-navegacao {
   display: flex;
-  gap: 12px;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 footer a {
-  padding: 6px 12px;
   border-radius: 8px;
   color: white;
   font-size: 14px;
 }
 
 footer a:hover {
-  background-color: rgba(255, 255, 255, 0.06);
   color: #b74b4b;
-  transition: 0.3s ease;
+  transition: 0.7s ease;
 }
 
 /* ===================== */

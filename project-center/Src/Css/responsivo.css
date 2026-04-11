@@ -1,103 +1,632 @@
-@media (max-width:820px) {
-    /* Header */
-    #logo {
-        margin-left: 5px;
-    }
-    #logo img {
-        height: 60px;
-    }
-    #botoes-navegacao {
-        gap: 20px;
-    }
-    #botoes-navegacao a {
-        font-size: 15px;
-        margin-left: 2px;
-    }
-    #social-media img {
-        width: 40px;
-        height: 40px;
-    }
-    /* Main */
-    section#home h1, .home-content span {
-        font-size: 40px;
-    }
-    section#home p {
-        font-size: 20px;
-    }
-    .typing-text {
-        font-size: 25px;
-    }
-    .typing-text span {
-        font-size: 30px;
-    }
-    
+/* ============================================================ */
+/* 📱 RESPONSIVO — Gabriel Costa (gabrielcosta-js)             */
+/* ============================================================ */
+
+/* ===================== */
+/* 🖥️ TABLET GRANDE      */
+/* max-width: 1024px     */
+/* ===================== */
+@media (max-width: 1024px) {
+
+  /* --- NAV --- */
+  nav {
+    padding: 10px 15px;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  #botoes-navegacao a {
+    font-size: 13px;
+    margin-left: 12px;
+  }
+
+  #social-media a {
+    margin: 0 6px;
+    font-size: 20px;
+  }
+
+  #social-media a:nth-child(4) {
+    margin-right: 10px;
+  }
+
+  /* --- HOME --- */
+  section#home {
+    padding: 80px 40px 40px;
+  }
+
+  .home-content h1,
+  .home-content span {
+    font-size: 38px;
+  }
+
+  .typing-text {
+    font-size: 28px;
+  }
+
+  .typing-text span {
+    font-size: 36px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+
+  /* --- ABOUT --- */
+  #about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 0 30px;
+  }
+
+  #about-text {
+    width: 100%;
+  }
+
+  #about-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* --- TOOLS --- */
+  #ContainerTools {
+    width: 80%;
+  }
+
+  #subContainer {
+    width: 90%;
+    gap: 18px;
+  }
+
+  /* --- PROJECTS --- */
+  #projectContainer {
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .projectSubContainer {
+    width: 280px;
+  }
+
+  /* --- SKILLS --- */
+  .skillSubContainer {
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skillSubContainer div img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skillLista {
+    text-align: left;
+  }
+
+  #certificadoContainer {
+    width: 75%;
+  }
+
+  /* --- PARALLAX fix tablet --- */
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
-@media (max-width: 500px) {
+/* ===================== */
+/* 📱 TABLET / CELULAR   */
+/* max-width: 768px      */
+/* ===================== */
+@media (max-width: 768px) {
 
-    /* Header */
-    header #logo{
-        margin-left: 3px;
-    }
-    nav #botoes-navegacao, #social-media{
-        display: none;
-    }
-    /* Main */
-    section#home h1, .home-content span {
-        font-size: 20px;
-    }
-    section#home p {
-        font-size: 12px;
-    }
-    .typing-text {
-        font-size: 15px;
-    }
-    .typing-text span {
-        font-size: 18px;
-    }
-    .social-icons a{  
-        width: 50px;
-        height: 50px;
-        font-size: 30px;
-    }
-    .btn{      
-        font-size: 20px;
-        padding: 10px 30px;
-        border-radius: 64px;
-        letter-spacing: 0px;
-    }
-    span.aviso {
-        margin-top: 80px;
-        display: block;
-    }
-    span.aviso::after {
-        color: White;
-        content: "❗Atenção, essa página ainda não está pronta para dispositivos movéis! Por favor aguarde até que ela fique pronta!";
-    }
-    span.oculto {
-        display: block;
-        color: white;
-        margin-top: 20px;
-    }
-    span.oculto a {
-        text-decoration: underline;
-    }
-    /* Footer */
-    footer #footer-navegacao {
-        display: none;
-    }
+  /* --- NAV --- */
+  nav {
+    padding: 8px 12px;
+    justify-content: space-between;
+  }
 
-    /* Página 02 */
-    main #projects-home {
-        margin-bottom: 50px;
-    }
-    main #projects-home h1 {
-        margin: 50px 0px 0px 10px;
-    }
-    main #projects-home h2 {
-        margin: 20px 0px 0px 10px;
-    }
-    main #projects-home li, #projects-home p {
-        margin: 20px 0px 0px 40px;
-    }
+  #logo {
+    margin-left: 5px;
+  }
+
+  #logo img {
+    height: 44px;
+  }
+
+  #botoes-navegacao {
+    display: none;
+  }
+
+  #social-media {
+    display: none;
+  }
+
+  /* --- PARALLAX fix mobile --- */
+  .parallax {
+    background-attachment: scroll;
+    height: auto;
+  }
+
+  /* --- HOME --- */
+  section#home {
+    padding: 20px 20px 40px;
+    margin-top: 65px;
+  }
+
+  .home-content h1,
+  .home-content span {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .home-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .typing-text {
+    font-size: 22px;
+    min-width: unset;
+  }
+
+  .typing-text span {
+    font-size: 28px;
+  }
+
+  .social-icons a {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+    margin: 30px 15px 30px 0;
+  }
+
+  .btn {
+    font-size: 17px;
+    padding: 10px 28px;
+    letter-spacing: 0.15rem;
+  }
+
+  /* --- ABOUT --- */
+  #about {
+    padding: 80px 0 40px;
+  }
+
+  #about-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    gap: 15px;
+  }
+
+  #about-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  #about-text {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #about-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* --- TOOLS --- */
+  #tools {
+    padding: 80px 0 40px;
+  }
+
+  #ContainerTools {
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px 10px;
+  }
+
+  #subContainer {
+    width: 100%;
+    gap: 14px;
+    margin-top: 30px;
+  }
+
+  .divTools {
+    width: 100px;
+    height: 120px;
+  }
+
+  .divTools img {
+    width: 80px;
+  }
+
+  .divTools p {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  /* --- PROJECTS --- */
+  #projects {
+    padding: 80px 0 40px;
+  }
+
+  #projectContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+    margin-top: 30px;
+  }
+
+  .projectSubContainer {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .projectSubContainer img {
+    height: 170px;
+  }
+
+  /* --- SKILLS --- */
+  #skills {
+    padding: 80px 0 40px;
+  }
+
+  #skillsContainer {
+    padding: 0 15px;
+  }
+
+  .skillSubContainer {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+  }
+
+  .skillSubContainer div img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .skillSubContainer h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .skillLista {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .skillLista li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  #certificadoContainer {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #certificacoes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #certificacoes img {
+    width: 160px;
+    height: 120px;
+  }
+
+  /* --- BOTÕES FLUTUANTES --- */
+  #baixarCurriculo {
+    bottom: 8%;
+    left: 2%;
+  }
+
+  #baixarCurriculo a {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  #mudarTema {
+    bottom: 8%;
+    right: 2%;
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+
+  /* --- FOOTER --- */
+  #footerr {
+    position: static;
+    bottom: auto;
+  }
+
+  #direitos {
+    font-size: 9px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  #footer-navegacao {
+    gap: 10px;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+}
+
+/* ===================== */
+/* 📱 CELULAR PEQUENO    */
+/* max-width: 480px      */
+/* ===================== */
+@media (max-width: 480px) {
+
+  /* --- NAV --- */
+  nav {
+    padding: 6px 10px;
+  }
+
+  #logo img {
+    height: 38px;
+  }
+
+  #botoes-navegacao,
+  #social-media {
+    display: none;
+  }
+
+  /* --- HOME --- */
+  section#home {
+    padding: 15px 15px 35px;
+    margin-top: 60px;
+  }
+
+  .home-content h1,
+  .home-content span {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .home-content h3 {
+    font-size: 15px;
+  }
+
+  .home-content p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .typing-text {
+    font-size: 16px;
+    min-width: unset;
+  }
+
+  .typing-text span {
+    font-size: 20px;
+  }
+
+  .social-icons a {
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+    margin: 24px 12px 24px 0;
+    border-width: 2px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 9px 22px;
+    letter-spacing: 0;
+    border-radius: 40px;
+  }
+
+  span.aviso {
+    margin-top: 20px;
+    display: block;
+  }
+
+  span.aviso::after {
+    color: white;
+    content: "❗ Esta página ainda não está totalmente otimizada para dispositivos móveis.";
+    font-size: 12px;
+  }
+
+  span.oculto {
+    display: block;
+    color: white;
+    margin-top: 12px;
+    font-size: 13px;
+  }
+
+  span.oculto a {
+    text-decoration: underline;
+    color: #b74b4b;
+  }
+
+  /* --- ABOUT --- */
+  #about-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  #about-text p {
+    font-size: 13px;
+  }
+
+  /* --- TOOLS --- */
+  #ContainerTools {
+    width: 95%;
+    padding: 12px 8px;
+  }
+
+  #subContainer {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .divTools {
+    width: 85px;
+    height: 105px;
+    border-radius: 10px;
+    padding: 8px 6px 18px;
+  }
+
+  .divTools img {
+    width: 65px;
+  }
+
+  .divTools p {
+    font-size: 13px;
+    padding: 4px;
+  }
+
+  /* --- PROJECTS --- */
+  .projectSubContainer {
+    width: 95%;
+  }
+
+  .projectSubContainer img {
+    height: 150px;
+  }
+
+  .projectSubContainer h2 {
+    font-size: 16px;
+  }
+
+  .projectSubContainer p {
+    font-size: 13px;
+  }
+
+  .projectFerramentas li {
+    font-size: 11px;
+    padding: 4px;
+  }
+
+  /* --- SKILLS --- */
+  .skillSubContainer {
+    width: 95%;
+    padding: 15px 12px;
+  }
+
+  .skillSubContainer div img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skillSubContainer h2 {
+    font-size: 16px;
+  }
+
+  .skillLista li {
+    font-size: 13px;
+  }
+
+  #certificacoes img {
+    width: 130px;
+    height: 100px;
+  }
+
+  /* --- MODAL --- */
+  #fecharModal {
+    top: -16px;
+    right: -16px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  /* --- BOTÕES FLUTUANTES --- */
+  #baixarCurriculo {
+    bottom: 6%;
+    left: 1%;
+  }
+
+  #baixarCurriculo a {
+    padding: 9px 12px;
+    font-size: 12px;
+    border-radius: 24px;
+  }
+
+  #mudarTema {
+    bottom: 6%;
+    right: 1%;
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+  }
+
+  /* --- FOOTER --- */
+  #footerr {
+    position: static;
+  }
+
+  #direitos {
+    font-size: 8px;
+    padding: 0 8px;
+  }
+
+  #footer-navegacao {
+    gap: 8px;
+  }
+
+  footer a {
+    font-size: 11px;
+  }
+}
+
+/* ===================== */
+/* 📱 CELULAR MUITO PEQUENO */
+/* max-width: 360px      */
+/* ===================== */
+@media (max-width: 360px) {
+
+  .home-content h1,
+  .home-content span {
+    font-size: 19px;
+  }
+
+  .typing-text span {
+    font-size: 17px;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 19px;
+    margin: 18px 10px 18px 0;
+  }
+
+  .divTools {
+    width: 75px;
+    height: 95px;
+  }
+
+  .divTools img {
+    width: 55px;
+  }
+
+  .divTools p {
+    font-size: 11px;
+  }
+
+  .skillSubContainer div img {
+    width: 100px;
+    height: 100px;
+  }
 }
