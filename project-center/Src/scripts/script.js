@@ -42,28 +42,28 @@ export function tema() {
     });
 }
 export function scrollAtivo() {
-  const sections = document.querySelectorAll("section");
-  const menuItems = document.querySelectorAll("#botoes-navegacao a");
+    const sections = document.querySelectorAll("section");
+    const menuItems = document.querySelectorAll("#botoes-navegacao a");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute("id");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute("id");
 
-        menuItems.forEach(link => {
-          link.classList.remove("active");
+                menuItems.forEach(link => {
+                    link.classList.remove("active");
 
-          if (link.getAttribute("href") === `#${id}`) {
-            link.classList.add("active");
-          }
+                    if (link.getAttribute("href") === `#${id}`) {
+                        link.classList.add("active");
+                    }
+                });
+            }
         });
-      }
+    }, {
+        threshold: 0.6 // porcentagem visível da section
     });
-  }, {
-    threshold: 0.6 // porcentagem visível da section
-  });
 
-  sections.forEach(section => observer.observe(section));
+    sections.forEach(section => observer.observe(section));
 }
 
 export function coresProjetosFerramentas() {
@@ -75,7 +75,7 @@ export function coresProjetosFerramentas() {
 
         if (texto.includes('html')) {
             lista.style.backgroundColor = '#C2185B'; // red
-        } 
+        }
         else if (texto.includes('css')) {
             lista.style.backgroundColor = '#3498DB'; // Usei o rosa/vinho do seu print
         }
@@ -88,3 +88,26 @@ export function coresProjetosFerramentas() {
     });
 }
 
+export function expandirCertificado() {
+    console.log('clique detectado')
+    const certificado = document.querySelector("#certificadoImg")
+    const modal = document.querySelector("#modalCertificado")
+    const fechar = document.querySelector("#fecharModal")
+
+    // abrir modal
+    certificado.addEventListener("click", function () {
+        modal.style.display = "flex"
+    })
+
+    // fechar modal
+    fechar.addEventListener("click", function () {
+        modal.style.display = "none"
+    })
+
+    // fechar clicando fora da imagem
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none"
+        }
+    })
+}

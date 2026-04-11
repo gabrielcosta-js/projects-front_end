@@ -143,19 +143,20 @@ h3 {
   font-size: 14px;
   font-weight: 500;
 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 #baixarCurriculo a:hover {
   transform: scale(1.08);
 
-  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 #baixarCurriculo i {
   font-size: 16px;
 }
+
 /* ===================== */
 /* 🌞 LIGHT MODE */
 /* ===================== */
@@ -175,8 +176,8 @@ body.light nav {
       #3a0d0d,
       #7a1c1c,
       #c94c4c);
-   border: solid rgba(0, 0, 0, 0.829);
-   border-width: 2px;
+  border: solid rgba(0, 0, 0, 0.829);
+  border-width: 2px;
 }
 
 /* ===================== */
@@ -218,11 +219,14 @@ body.light .parallax::before {
 /* ===================== */
 /* TEXTO */
 /* ===================== */
-body.light .home-content h1, body.light .home-content h3, body.light .home-content p {
+body.light .home-content h1,
+body.light .home-content h3,
+body.light .home-content p {
   color: #000000;
 }
 
-body.light .home-content span,body.light .typing-text span::before {
+body.light .home-content span,
+body.light .typing-text span::before {
   color: white;
 }
 
@@ -292,11 +296,12 @@ body.light #mudarTema {
 body.light #mudarTema i {
   filter: brightness(0);
 }
+
 /* ===================== */
 /* BOTÃO CURRÍCULO - LIGHT */
 /* ===================== */
 
-body.light #baixarCurriculo a{
+body.light #baixarCurriculo a {
   background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
 
@@ -307,24 +312,57 @@ body.light #baixarCurriculo a{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-body.light #baixarCurriculo a:hover{
+body.light #baixarCurriculo a:hover {
   background: rgba(255, 255, 255, 0.9);
 
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
-body.light #baixarCurriculo i{
+body.light #baixarCurriculo i {
   color: #111;
 }
 
+/* Modal light */
+body.light #fecharModal{
+
+  color: #111;
+
+  background: linear-gradient(135deg, #ffffff, #eaeaea);
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+
+}
+
+/* hover light */
+body.light #fecharModal:hover{
+
+  box-shadow:
+    0 10px 22px rgba(0,0,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+
+  background: linear-gradient(135deg, #ffffff, #dddddd);
+
+}
+
+/* clique light */
+body.light #fecharModal:active{
+
+  box-shadow:
+    0 3px 8px rgba(0,0,0,0.2),
+    inset 0 2px 4px rgba(0,0,0,0.15);
+
+}
 
 /* ===================== */
 /* Tools */
 /* ===================== */
 #tools {
-    background-image: url('../Img/fundo.png');
-    height: auto;
+  background-image: url('../Img/fundo.png');
+  height: auto;
 }
+
 body.light #ContainerTools {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -362,50 +400,51 @@ body.light #skills {
 }
 
 /* título da seção */
-body.light #skills .SectionText{
+body.light #skills .SectionText {
   color: #222;
 }
 
 /* container principal */
-body.light #skillsContainer{
+body.light #skillsContainer {
   color: #222;
 }
 
 /* cards */
-body.light .skillSubContainer{
-  background: rgba(255,255,255,0.75);
+body.light .skillSubContainer {
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(8px);
 
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 
   border-radius: 18px;
 }
 
 /* títulos dos cards */
-body.light .skillSubContainer h2{
+body.light .skillSubContainer h2 {
   color: #111;
 }
 
 /* lista */
-body.light .skillLista{
+body.light .skillLista {
   color: #333;
 }
 
 /* itens da lista */
-body.light .skillLista li{
+body.light .skillLista li {
   color: #333;
 }
 
 /* imagens (caso fiquem muito claras) */
-body.light .skillSubContainer img{
+body.light .skillSubContainer img {
   filter: none;
 }
 
 /* certificações */
-body.light #certificadoContainer{
-  background: rgba(255,255,255,0.85);
+body.light #certificadoContainer {
+  background: rgba(255, 255, 255, 0.85);
 }
+
 /* ===================== */
 /* FOOTER */
 /* ===================== */
@@ -416,7 +455,7 @@ body.light footer {
       #c94c4c);
 
   border: solid rgba(0, 0, 0, 0.829);
-   border-width: 2px;
+  border-width: 2px;
 }
 
 
@@ -658,11 +697,15 @@ section#home {
   0% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(-10px); /* sobe */
+    transform: translateY(-10px);
+    /* sobe */
   }
+
   100% {
-    transform: translateY(0); /* volta */
+    transform: translateY(0);
+    /* volta */
   }
 }
 
@@ -807,7 +850,7 @@ section#Tools {
 }
 
 .projectSubContainer:hover {
- transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 .projectSubContainer img {
@@ -838,6 +881,7 @@ section#Tools {
   background-color: rgba(58, 58, 183, 0.607);
   border-radius: 0 0 15px 15px;
 }
+
 .projectFerramentas li:nth-child(1) {
   margin-left: 20px;
 }
@@ -858,15 +902,18 @@ section#Tools {
   height: auto;
   background-image: url('../Img/notebook2.png');
 }
+
 #skills h1 {
   margin-bottom: 50px;
 }
+
 #skillsContainer {
   display: flex;
   justify-items: center;
   align-items: center;
   flex-direction: column;
 }
+
 .skillSubContainer {
   width: 50%;
   padding: 15px;
@@ -881,43 +928,142 @@ section#Tools {
   margin-bottom: 50px;
   transition: transform 0.5s ease;
 }
-.skillSubContainer:hover{
-   transform: translateY(-15px);
+
+.skillSubContainer:hover {
+  transform: translateY(-15px);
 }
 
 .skillSubContainer div img {
   width: 300px;
   height: 300px;
 }
+
 .skillSubContainer h2 {
-    font-family: 'Libre Baskerville', Georgia, serif;
-    margin-bottom: 15px;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  margin-bottom: 15px;
 }
+
 .skillLista li {
-    list-style: none;
-    font-family: 'Libre Baskerville', Georgia, serif;
-    margin-bottom: 10px;
+  list-style: none;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  margin-bottom: 10px;
 }
+
 .skillSubContainer {
-    font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
 }
 
 #certificadoContainer {
-    display: block;
-    width: 80%;
+  display: block;
+  width: 80%;
 }
+
 #certificadoContainer h2 {
-    text-align: center;
+  text-align: center;
 }
+
 #certificacoes {
-    display: flex;
-    gap: 15px;
-    flex-direction: row;
-    
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+
 }
+
 #certificacoes img {
-    width: 200px;
-    height: 150px;
+  width: 200px;
+  height: 150px;
+}
+
+/* fundo escuro */
+#modalCertificado {
+  display: none;
+  /* começa escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.8);
+  /* escurece o fundo */
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+
+/* caixa do certificado */
+#modalConteudo {
+  position: relative;
+}
+
+/* imagem grande */
+#certificadoGrande {
+  max-width: 90vw;
+  max-height: 90vh;
+
+  border-radius: 10px;
+}
+
+/* botão X */
+#fecharModal {
+  position: absolute;
+  top: -22px;
+  right: -60px;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  color: white;
+  background: linear-gradient(135deg, #222, #444);
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(0, 0, 0, 0.6);
+
+  transition: all 0.25s ease;
+}
+
+/* hover */
+#fecharModal:hover {
+  transform: translateY(-2px) scale(1.05);
+
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+/* clique */
+#fecharModal:active {
+  transform: scale(0.92);
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* efeito ao passar mouse no certificado pequeno */
+#certificacoes img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#certificacoes img:hover {
+  transform: scale(1.05);
 }
 
 /* ===================== */
@@ -937,19 +1083,20 @@ footer {
   justify-content: center;
 }
 
-#footer-container{
+#footer-container {
   display: flex;
-  flex-direction: column; /* coloca um em cima do outro */
+  flex-direction: column;
+  /* coloca um em cima do outro */
   align-items: center;
   gap: 6px;
 }
 
-#direitos{
+#direitos {
   font-size: 13px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
-#footer-navegacao{
+#footer-navegacao {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;

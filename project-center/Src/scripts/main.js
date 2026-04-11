@@ -5,3 +5,4 @@ script.paginaAtiva();
 script.scrollAtivo();
 script.tema();
 script.coresProjetosFerramentas();
+script.expandirCertificado();
