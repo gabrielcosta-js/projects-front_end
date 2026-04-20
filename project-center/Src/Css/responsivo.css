@@ -79,12 +79,14 @@
   #subContainer {
     width: 90%;
     gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* --- PROJECTS --- */
   #projectContainer {
-    gap: 20px;
+    gap: 20px; 
     padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .projectSubContainer {
@@ -238,6 +240,7 @@
     width: 100%;
     gap: 14px;
     margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .divTools {
@@ -257,6 +260,7 @@
   /* --- PROJECTS --- */
   #projects {
     padding: 80px 0 40px;
+    grid-template-columns: 1fr;
   }
 
   #projectContainer {
@@ -478,6 +482,7 @@
   #subContainer {
     gap: 10px;
     margin-top: 20px;
+    grid-template-columns: 1fr;
   }
 
   .divTools {

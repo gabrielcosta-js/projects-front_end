@@ -42,7 +42,7 @@ h3 {
   position: relative;
   z-index: 0;
 
-  height: 400px;
+  height: 100vh;
 
   background-attachment: fixed;
   background-position: center;
@@ -143,6 +143,18 @@ h3 {
 #baixarCurriculo i {
   font-size: 16px;
 }
+/* estado inicial (escondido) */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px); /* vem de baixo */
+  transition: all 0.8s ease;
+}
+
+/* quando aparece */
+.reveal.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* ===================== */
 /* 🌞 LIGHT MODE */
@@ -213,6 +225,13 @@ body.light #about-text p {
 
 body.light .SectionText {
   color: #000000;
+}
+body.light .frase-impacto p {
+  color: #222;
+}
+
+body.light .frase-impacto span {
+  color: #7a1c1c; /* mantém harmonia com seu tema */
 }
 
 /* ===================== */
@@ -495,10 +514,11 @@ nav {
 section {
   box-shadow: 5px 5px 50px black;
   padding: 100px 0px;
+  min-height: 100dvh;
+  padding-top: 120px; /* ajusta pro header */
 }
 
 section#home {
-  height: auto;
   background-color: #000000;
   padding: 60px;
   margin-top: 50px;
@@ -677,6 +697,29 @@ section#home {
   text-align: justify;
 }
 
+.frase-impacto {
+  margin-top: 10%;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.frase-impacto p {
+  font-size: 20px;
+  font-style: italic;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.frase-impacto span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #b74b4b;
+  font-weight: 600;
+}
+
 /* ===================== */
 /* 🧠 Tools */
 /* ===================== */
@@ -700,16 +743,17 @@ section#Tools {
 
 #subContainer {
   width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔥 4 por linha */
   gap: 25px;
   margin-top: 50px;
 }
 
 /* Card Skill */
 .divTools {
-  width: 120px;
+   width: 100%;
+  max-width: 130px; /* opcional, evita esticar demais */
+  margin: 0 auto;
   height: 140px;
   position: relative;
   background-color: white;
@@ -781,17 +825,16 @@ section#Tools {
 }
 
 #projectContainer {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔥 sempre 3 */
   gap: 30px;
-  align-items: center;
-  flex-wrap: wrap;
+  max-width: 1000px; /* limita expansão */
+  margin: 50px auto;
 }
 
 .projectSubContainer {
   height: auto;
-  width: 300px;
+  width: 100%;
   background-color: white;
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.201);
