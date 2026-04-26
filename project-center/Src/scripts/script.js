@@ -75,54 +75,118 @@ export function animarScroll() {
             }
         });
     }, {
-        threshold: 0.2
+        threshold: 0.05
     });
 
     elementos.forEach(el => observer.observe(el));
 }
 
 export function coresProjetosFerramentas() {
-    const listas = document.querySelectorAll('.projectFerramentas li');
+  const listas = document.querySelectorAll(".projectFerramentas li");
 
-    listas.forEach(lista => {
-        // Usamos textContent para pegar o texto e includes() para verificar a palavra
-        const texto = lista.textContent.toLocaleLowerCase().trim();
+  listas.forEach((lista) => {
+    const texto = lista.textContent.toLowerCase().trim();
 
-        if (texto.includes('html')) {
-            lista.style.backgroundColor = '#C2185B'; // red
-        }
-        else if (texto.includes('css')) {
-            lista.style.backgroundColor = '#3498DB'; // Usei o rosa/vinho do seu print
-        }
-        else if (texto.includes('javascript') || texto.includes('js')) {
-            lista.style.backgroundColor = '#F1C40F'; // Amarelo
-        }
+    if (texto.includes("html")) {
+      lista.style.backgroundColor = "#E34F26";
+    }
 
-        // Garante que o texto fique legível (branco) se o fundo for escuro
-        lista.style.color = 'white';
-    });
+    else if (texto.includes("css")) {
+      lista.style.backgroundColor = "#1572B6";
+    }
+
+    else if (texto.includes("javascript") || texto.includes("js")) {
+      lista.style.backgroundColor = "#F7DF1E";
+      lista.style.color = "#000";
+    }
+
+    else if (texto.includes("java")) {
+      lista.style.backgroundColor = "#5382A1";
+    }
+
+    else if (texto.includes("api")) {
+      lista.style.backgroundColor = "#9B59B6";
+    }
+
+    else if (
+      texto.includes("banco") ||
+      texto.includes("database") ||
+      texto.includes("supabase")
+    ) {
+      lista.style.backgroundColor = "#2ECC71";
+    }
+
+    else if (texto.includes("mobile")) {
+      lista.style.backgroundColor = "#16A085";
+    }
+
+    else if (
+      texto.includes("ia") ||
+      texto.includes("inteligência artificial") ||
+      texto.includes("yolo")
+    ) {
+      lista.style.backgroundColor = "#E74C3C";
+    }
+
+    else if (texto.includes("vbs")) {
+      lista.style.backgroundColor = "#34495E";
+    }
+
+    else if (texto.includes("batch")) {
+      lista.style.backgroundColor = "#7F8C8D";
+    }
+
+    else if (texto.includes("ffmpeg")) {
+      lista.style.backgroundColor = "#27AE60";
+    }
+
+    else if (texto.includes("rtsp")) {
+      lista.style.backgroundColor = "#2980B9";
+    }
+
+    else if (texto.includes("controle")) {
+      lista.style.backgroundColor = "#D35400";
+    }
+
+    else {
+      lista.style.backgroundColor = "#555";
+    }
+
+    if (!texto.includes("javascript") && !texto.includes("js")) {
+      lista.style.color = "white";
+    }
+  });
 }
 
 export function expandirCertificado() {
-    console.log('clique detectado')
-    const certificado = document.querySelector("#certificadoImg")
-    const modal = document.querySelector("#modalCertificado")
-    const fechar = document.querySelector("#fecharModal")
+    const certificados = document.querySelectorAll(".certificadoImg");
+    const modal = document.querySelector("#modalCertificado");
+    const fechar = document.querySelector("#fecharModal");
+    const certificadoGrande = document.querySelector("#certificadoGrande");
 
-    // abrir modal
-    certificado.addEventListener("click", function () {
-        modal.style.display = "flex"
-    })
+    certificados.forEach(certificado => {
+        certificado.addEventListener("click", function () {
+            certificadoGrande.src = certificado.src;
+            modal.style.display = "flex";
+        });
+    });
 
-    // fechar modal
     fechar.addEventListener("click", function () {
-        modal.style.display = "none"
-    })
+        modal.style.display = "none";
+    });
 
-    // fechar clicando fora da imagem
     modal.addEventListener("click", function (event) {
         if (event.target === modal) {
-            modal.style.display = "none"
+            modal.style.display = "none";
         }
-    })
+    });
+}
+
+export function menuMobile() {
+  const botao = document.querySelector("#menuHamburguer");
+  const menu = document.querySelector("#menuMobile");
+
+  botao.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+  });
 }

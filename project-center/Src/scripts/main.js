@@ -7,3 +7,4 @@ script.animarScroll();
 script.tema();
 script.coresProjetosFerramentas();
 script.expandirCertificado();
+script.menuMobile();

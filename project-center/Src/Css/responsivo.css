@@ -7,7 +7,6 @@
 /* max-width: 1024px     */
 /* ===================== */
 @media (max-width: 1024px) {
-
   /* --- NAV --- */
   nav {
     padding: 10px 15px;
@@ -28,7 +27,7 @@
   }
 
   #social-media a:nth-child(4) {
-    margin-right: 10px;
+    margin-right: 40px;
   }
 
   /* --- HOME --- */
@@ -84,15 +83,18 @@
   }
 
   /* --- PROJECTS --- */
-  #projectContainer {
-    gap: 20px; 
-    padding: 0 20px;
-    grid-template-columns: repeat(2, 1fr);
-  }
+ #projectContainer {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
 
-  .projectSubContainer {
-    width: 280px;
-  }
+.projectSubContainer {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+}
+
 
   /* --- SKILLS --- */
   .skillSubContainer {
@@ -126,7 +128,6 @@
 /* max-width: 768px      */
 /* ===================== */
 @media (max-width: 768px) {
-
   /* --- NAV --- */
   nav {
     padding: 8px 12px;
@@ -148,6 +149,16 @@
   #social-media {
     display: none;
   }
+
+  #botoes-navegacao,
+  #social-media{
+    display:none;
+  }
+
+  #menuHamburguer{
+    display:block;
+  }
+
 
   /* --- PARALLAX fix mobile --- */
   .parallax {
@@ -243,14 +254,13 @@
     gap: 14px;
     margin-top: 30px;
     grid-template-columns: repeat(3, minmax(140px, 1fr));
-
   }
 
   .divTools {
-  width: 100%;   /* ocupa o espaço do grid */
-  height: auto;  /* deixa crescer natural */
-  padding: 15px;
-}
+    width: 100%; /* ocupa o espaço do grid */
+    height: auto; /* deixa crescer natural */
+    padding: 15px;
+  }
 
   .divTools img {
     width: 80px;
@@ -267,17 +277,16 @@
   }
 
   #projectContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     gap: 20px;
-    padding: 0 15px;
-    margin-top: 30px;
   }
 
-  .projectSubContainer {
-    width: 90%;
-    max-width: 400px;
-  }
+.projectSubContainer {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+}
 
   .projectSubContainer img {
     height: 170px;
@@ -345,19 +354,18 @@
   }
 
   #baixarCurriculo a {
-    padding: 16px 22px;   /* aumenta área clicável */
-  font-size: 16px;      /* texto maior */
-  border-radius: 40px;
+    padding: 10px 12px; 
+    border-radius: 40px;
   }
-#baixarCurriculo i {
-  font-size: 28px; /* ícone maior */
-}
+  #baixarCurriculo i {
+    font-size: 20px; 
+  }
   #mudarTema {
     bottom: 8%;
     right: 2%;
     width: 75px;
-  height: 75px;
-  font-size: 34px;
+    height: 75px;
+    font-size: 34px;
   }
 
   /* --- FOOTER --- */
@@ -386,7 +394,6 @@
 /* max-width: 480px      */
 /* ===================== */
 @media (max-width: 480px) {
-
   /* --- NAV --- */
   nav {
     padding: 6px 10px;
@@ -406,7 +413,6 @@
     padding: 20px 15px 160px;
     margin-top: 50px;
     min-height: auto; /* deixa altura automática */
-   
   }
 
   .home-content h1,
@@ -510,10 +516,6 @@
   }
 
   /* --- PROJECTS --- */
-  .projectSubContainer {
-    width: 95%;
-  }
-
   .projectSubContainer img {
     height: 150px;
   }
@@ -566,8 +568,8 @@
 
   /* --- BOTÕES FLUTUANTES --- */
   #baixarCurriculo {
-    bottom: 6%;
-    left: 1%;
+    bottom: 9%;
+    left: 2%;
   }
 
   #baixarCurriculo a {
@@ -577,8 +579,8 @@
   }
 
   #mudarTema {
-    bottom: 6%;
-    right: 1%;
+    bottom: 9%;
+    right: 2%;
     width: 46px;
     height: 46px;
     font-size: 20px;
@@ -608,7 +610,6 @@
 /* max-width: 360px      */
 /* ===================== */
 @media (max-width: 360px) {
-
   .home-content h1,
   .home-content span {
     font-size: 19px;
