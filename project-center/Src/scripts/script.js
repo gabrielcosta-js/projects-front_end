@@ -190,3 +190,13 @@ export function menuMobile() {
     menu.classList.toggle("ativo");
   });
 }
+export function menuMobileFechar() {
+  const links = document.querySelectorAll("#menuMobile a");
+  const menu = document.querySelector("#menuMobile");
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("ativo");
+    });
+  });
+}

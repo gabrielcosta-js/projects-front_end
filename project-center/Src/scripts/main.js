@@ -8,3 +8,4 @@ script.tema();
 script.coresProjetosFerramentas();
 script.expandirCertificado();
 script.menuMobile();
+script.menuMobileFechar();
