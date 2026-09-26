@@ -348,18 +348,7 @@
   }
 
   /* --- BOTÕES FLUTUANTES --- */
-  #baixarCurriculo {
-    bottom: 8%;
-    left: 2%;
-  }
 
-  #baixarCurriculo a {
-    padding: 10px 12px; 
-    border-radius: 40px;
-  }
-  #baixarCurriculo i {
-    font-size: 20px; 
-  }
   #mudarTema {
     bottom: 8%;
     right: 2%;
@@ -567,16 +556,6 @@
   }
 
   /* --- BOTÕES FLUTUANTES --- */
-  #baixarCurriculo {
-    bottom: 9%;
-    left: 2%;
-  }
-
-  #baixarCurriculo a {
-    padding: 9px 12px;
-    font-size: 12px;
-    border-radius: 24px;
-  }
 
   #mudarTema {
     bottom: 9%;
