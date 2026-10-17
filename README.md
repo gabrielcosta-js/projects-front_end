@@ -21,12 +21,12 @@
 
    <h2>🏆 Projetos Destaque</h2>
    <ul>
-       <li><a href="https://gabriel-costa-de-jesus.github.io/projetos-front_end/html-css-projects/projeto1-android/index.html" target="_blank">Blog de Curiosidades de Tecnologia</a> - Um blog desenvolvido com HTML e CSS que apresenta uma variedade de curiosidades e informações sobre o mundo da tecnologia.</li>
-       <li><a href="https://gabriel-costa-de-jesus.github.io/projetos-front_end/html-css-projects/projeto2-cordel_moderno/index.html" target="_blank">Cordel Moderno sobre Tecnologia</a> - Um cordel moderno que explora e celebra aspectos da tecnologia, utilizando HTML e CSS para um design visualmente envolvente.</li>
-   </ul>
+       <li><a href="https://github.com/gabrielcosta-js/projects-front_end/tree/main/html-css-projects/projeto1-android/index.html" target="_blank">Blog de Curiosidades de Tecnologia</a> - Um blog desenvolvido com HTML e CSS que apresenta uma variedade de curiosidades e informações sobre o mundo da tecnologia.</li>
+       <li><a href="https://github.com/gabrielcosta-js/projects-front_end/tree/main/html-css-projects/projeto2-cordel_moderno/index.html" target="_blank">Cordel Moderno sobre Tecnologia</a> - Um cordel moderno que explora e celebra aspectos da tecnologia, utilizando HTML e CSS para um design visualmente envolvente.</li>
+       <li><a href="https://github.com/gabrielcosta-js/projects-front_end/blob/main/html-css-projects/projeto3-termo_game/index.html" target="_blank">Termo Game</a> - Recriação de um jogo, utilizando HTML e CSS e JavaScript
 
    <h2> 📩 Como acessar esse projeto?</h2>
-   <p>Para acessar este repositório e visualizar meus projetos em ação, visite a <a href="https://gabriel-costa-de-jesus.github.io/projetos-front_end/project-center/index.html">Central de Projetos</a>.</p>
+   <p>Para acessar este repositório e visualizar meus projetos em ação, visite a <a href="https://github.com/gabrielcosta-js/projects-front_end/blob/main/project-center/index.html">Central de Projetos</a>.</p>
 
    <h2>🔧 Tecnologias Utilizadas</h2>
    <p>Aqui estão as principais tecnologias que utilizei nestes projetos:</p>
